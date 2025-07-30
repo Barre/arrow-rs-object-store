@@ -249,8 +249,8 @@ impl Default for RetryConfig {
     fn default() -> Self {
         Self {
             backoff: Default::default(),
-            max_retries: 10,
-            retry_timeout: Duration::from_secs(3 * 60),
+            max_retries: 100,
+            retry_timeout: Duration::from_secs(30 * 60),
         }
     }
 }

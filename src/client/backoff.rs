@@ -40,9 +40,9 @@ pub struct BackoffConfig {
 impl Default for BackoffConfig {
     fn default() -> Self {
         Self {
-            init_backoff: Duration::from_millis(100),
-            max_backoff: Duration::from_secs(15),
-            base: 2.,
+            init_backoff: Duration::from_millis(50),
+            max_backoff: Duration::from_secs(5),
+            base: 1.5,
         }
     }
 }
